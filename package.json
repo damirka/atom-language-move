@@ -1,0 +1,26 @@
+{
+  "name": "language-move",
+  "version": "0.1.0",
+  "description": "Move language support in Atom",
+  "keywords": [
+    "move",
+    "mvir",
+    "libra",
+    "language",
+    "grammar",
+    "syntax"
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0 <2.0.0"
+  },
+  "dependencies": {},
+  "homepage": "https://github.com/damirka/atom-language-move",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damirka/atom-language-move.git"
+  },
+  "bugs": {
+    "url": "https://github.com/damirka/atom-language-move/issues"
+  }
+}
