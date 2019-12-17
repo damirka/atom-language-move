@@ -8,7 +8,10 @@
     "libra",
     "language",
     "grammar",
-    "syntax"
+    "syntax",
+    "move ir",
+    "ir",
+    "facebook"
   ],
   "license": "MIT",
   "engines": {
