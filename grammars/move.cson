@@ -46,10 +46,10 @@ repository:
         match: '\\b([A-Za-z][_A-Za-z0-9]*|_[_A-Za-z0-9]+)'
     }
 
-    uppercase_token: {
-        name: 'string.other',
-        match: '\\b[A-Z]([A-Za-z0-9]*)'
-    }
+    # uppercase_token: {
+    #     name: 'string.other',
+    #     match: '\\b[A-Z]([A-Za-z0-9]*)'
+    # }
 
     type_params: {
         comment: 'Type parameters'
@@ -114,6 +114,10 @@ patterns: [
         patterns: [
             { include: '#std_type' }
             { include: '#uppercase_token'}
+            { include: '#block_doc_comment' }
+            { include: '#line_doc_comment' }
+            { include: '#block_comment' }
+            { include: '#line_comment' }
         ]
 
         end: '}'
@@ -166,6 +170,12 @@ patterns: [
             2: { name: 'entity.name.type.move' }
         }
         end: '[\\{]'
+        patterns: [
+            { include: '#block_doc_comment' }
+            { include: '#line_doc_comment' }
+            { include: '#block_comment' }
+            { include: '#line_comment' }
+        ]
     }
 
 
@@ -178,7 +188,11 @@ patterns: [
           1: { name: 'entity.name.function.move' }
         }
         patterns: [
-            { include: '#uppercase_token' }
+            { include: '#block_doc_comment' }
+            { include: '#line_doc_comment' }
+            { include: '#block_comment' }
+            { include: '#line_comment' }
+            # { include: '#uppercase_token' }
         ]
     }
     {
@@ -191,6 +205,10 @@ patterns: [
         }
         patterns: [
             { include: '#type_params' }
+            { include: '#block_doc_comment' }
+            { include: '#line_doc_comment' }
+            { include: '#block_comment' }
+            { include: '#line_comment' }
         ]
     }
 
