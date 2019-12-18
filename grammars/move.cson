@@ -13,7 +13,7 @@ repository:
     }
 
     self: {
-        name: 'entity.name.type.move'
+        name: 'variable.language.self.move'
         match: '\\b(Self|self)\\b'
     }
 
