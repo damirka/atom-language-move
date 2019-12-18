@@ -12,4 +12,4 @@ $ apm install language-move
 
 ## Special thanks
 
-Thank you, (miqh)[https://github.com/miqh] for making your Rust package which I used as a basis for this one. See [original package for Rust](https://github.com/miqh/atom-language-rust).
+Thank you, [miqh](https://github.com/miqh) for making your Rust package which I used as a basis for this one. See [original package for Rust](https://github.com/miqh/atom-language-rust).
